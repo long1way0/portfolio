@@ -84,6 +84,10 @@ h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(22px, 
 .edu dt { color: var(--fg-dim); font-size: 14px; }
 .edu dd { margin: 2px 0 0; font-weight: 600; }
 .edu dl { margin: 0; min-width: 0; }
+.edu dd.lps { display: grid; gap: 10px; justify-items: start; font-weight: 400; }
+.lp { display: inline-flex; align-items: center; gap: 12px; padding: 8px 16px 8px 10px; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; }
+.lp .flag { width: 30px; height: 20px; border-radius: 3px; flex: none; box-shadow: 0 0 0 1px rgba(128, 128, 140, 0.35); }
+.lp strong { font-weight: 800; }
 .edu dd.lv { font-weight: 400; }
 .edu dd.lv strong { font-weight: 800; }
 
@@ -361,7 +365,7 @@ body{margin:0}img,video{max-width:100%}[hidden]{display:none!important}
     <h2 data-ru="Образование и языки">Education &amp; languages</h2>
     <div class="edu">
       <dl><dt data-ru="Образование">Education</dt><dd data-ru="Санкт-Петербургский государственный университет телекоммуникаций им. проф. М. А. Бонч-Бруевича, аудиовизуальная техника">Bonch-Bruevich Saint Petersburg State University of Telecommunications, Audiovisual Engineering</dd></dl>
-      <dl><dt data-ru="Языки">Languages</dt><dd class="lv" data-ru="Русский — <strong>C2</strong>">Russian — <strong>C2</strong></dd><dd class="lv" data-ru="Английский — <strong>B1</strong>">English — <strong>B1</strong></dd></dl>
+      <dl><dt data-ru="Языки">Languages</dt><dd class="lps"><span class="lp"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#0039a6"/><rect y="13.33" width="30" height="6.67" fill="#d52b1e"/></svg><span data-ru="Русский — <strong>C2</strong>">Russian — <strong>C2</strong></span></span><span class="lp"><svg class="flag" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="fs"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="ft"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#fs)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ft)" stroke="#c8102e" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#c8102e" stroke-width="6"/></g></svg><span data-ru="Английский — <strong>B1</strong>">English — <strong>B1</strong></span></span></dd></dl>
     </div>
   </section>
 
