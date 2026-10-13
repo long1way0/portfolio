@@ -29,6 +29,17 @@ body { background: var(--bg); color: var(--fg); font-family: var(--font); font-s
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 #reel { scroll-margin-top: 84px; }
 .contact { scroll-margin-top: 20px; }
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes settle { from { opacity: 0; transform: translateY(24px) scale(0.985); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .intro .role { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 0.1s both; }
+  .intro h1.name { animation: settle 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) 0.3s both; }
+  .about h2 { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 0.8s both; }
+  .about p:nth-of-type(1) { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 1s both; }
+  .about p:nth-of-type(2) { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 1.2s both; }
+  .about p:nth-of-type(3) { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 1.4s both; }
+  .reel { animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 1.6s both; }
+}
 .band { margin-inline: -20px; padding: 0 20px 64px; background: var(--bg); color: var(--fg); }
 .band.end { padding-bottom: 0; }
 .band.light { --bg: #f3f4f7; --surface: #ffffff; --line: #c3c8d4; --fg: #0c0e13; --fg-dim: #323a4d; --glow: #2a5fe0; --ice: #2a5fe0; --ember: #2f66f0; }
