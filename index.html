@@ -69,7 +69,8 @@ h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(22px, 
 .jobs h3 { margin: 0; font-size: 18px; letter-spacing: -0.01em; }
 .jobs p { margin: 0; color: var(--fg-dim); max-width: 62ch; }
 
-.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 24px; }
+.colstack { display: grid; gap: 24px; min-width: 0; }
+.cols { align-items: start; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 24px; }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px; min-width: 0; }
 .panel h3 { margin: 0 0 14px; font-size: 18px; }
 .panel h4 { margin: 20px 0 8px; font-size: 15px; color: var(--glow); font-weight: 600; }
@@ -304,6 +305,7 @@ body{margin:0}img,video{max-width:100%}[hidden]{display:none!important}
     <h2 data-ru="Навыки">Skills</h2>
     <p class="sub" data-ru="С чем и как я работаю.">What I work with and how.</p>
     <div class="cols">
+      <div class="colstack">
       <div class="panel">
         <h3 data-ru="Моушн и VFX">Motion &amp; VFX</h3>
         <ul>
@@ -313,7 +315,11 @@ body{margin:0}img,video{max-width:100%}[hidden]{display:none!important}
           <li data-ru="Цикличные анимации без заметного шва">Looping animations without a visible seam</li>
           <li data-ru="Работа со звуком и визуализация звука: подбор саунд-дизайна под анимацию, синхронизация движения с битом и акцентами трека">Audio work and sound visualization: choosing sound design for the animation, syncing motion to the beat and track accents</li>
         </ul>
-        <h4 data-ru="After Effects">After Effects</h4>
+      </div>
+      </div>
+      <div class="colstack">
+      <div class="panel">
+        <h3 data-ru="After Effects">After Effects</h3>
         <ul>
           <li data-ru="Сложный композитинг: многослойные сцены, прекомпозиции, режимы наложения, работа с альфа-каналом">Complex compositing: multi-layer scenes, precomps, blend modes, working with alpha channels</li>
           <li data-ru="Процедурная анимация и базовые выражения для автоматизации движения">Procedural animation and basic expressions to automate motion</li>
@@ -322,12 +328,16 @@ body{margin:0}img,video{max-width:100%}[hidden]{display:none!important}
           <li data-ru="Генеративные и процедурные эффекты для живого, органичного движения">Generative and procedural effects for lively, organic motion</li>
           <li data-ru="Оптимизация проектов и экспорт под разные платформы и форматы">Project optimization and export for different platforms and formats</li>
         </ul>
-        <h4 data-ru="Цвет и композитинг">Color &amp; compositing</h4>
+      </div>
+      <div class="panel">
+        <h3 data-ru="Цвет и композитинг">Color &amp; compositing</h3>
         <ul>
           <li data-ru="Цветокоррекция и стилизация в DaVinci Resolve">Color grading and stylization in DaVinci Resolve</li>
           <li data-ru="Маски и релайтинг по карте глубины">Masking and depth-map-based relighting</li>
         </ul>
       </div>
+      </div>
+      <div class="colstack">
       <div class="panel">
         <h3 data-ru="3D и игровые движки">3D &amp; game engines</h3>
         <ul>
@@ -344,10 +354,13 @@ body{margin:0}img,video{max-width:100%}[hidden]{display:none!important}
           <li data-ru="Типографика и композиция">Typography and composition</li>
           <li data-ru="Цвет и стилизация (комплементарные палитры, кинематографичная цветокоррекция)">Color and stylization (complementary palettes, cinematic grading)</li>
         </ul>
-        <h4 data-ru="ИИ в пайплайне">AI in the pipeline</h4>
+      </div>
+      <div class="panel">
+        <h3 data-ru="ИИ в пайплайне">AI in the pipeline</h3>
         <ul>
           <li data-ru="Claude Code, Codex: ИИ-ассистенты для скриптов, автоматизации и ускорения пайплайна">Claude Code, Codex: AI assistants for scripting, automation and a faster pipeline</li>
         </ul>
+      </div>
       </div>
     </div>
     <div class="tools" aria-label="Tools">
