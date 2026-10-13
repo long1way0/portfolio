@@ -7,7 +7,7 @@
 <title>Konstantin Burdin Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600;700&family=Inter:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: dark single-page portfolio. Sticky nav with RU/EN switch, dotted name, showreel, experience as rows, skills in columns, contact. */
 :root {
@@ -21,7 +21,6 @@
   --glow: #8fb0ff;
   --ice: #8fb0ff;
   --font-display: "Unbounded", "Arial Black", sans-serif;
-  --font-nav: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
   --font: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 * { box-sizing: border-box; }
@@ -38,9 +37,9 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 nav b { font-family: var(--font-display); font-weight: 700; font-size: 14px; }
 nav .right { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
 nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
-nav a { color: var(--fg-dim); text-decoration: none; font-family: var(--font-nav); font-weight: 500; font-size: 15px; }
+nav a { color: var(--fg-dim); text-decoration: none; font-weight: 500; font-size: 15px; }
 nav a:hover { color: var(--fg); }
-button.lang { background: none; color: var(--fg); border: 1px solid var(--line); border-radius: 8px; font-family: var(--font-nav); font-weight: 600; font-size: 14px; padding: 3px 12px; cursor: pointer; }
+button.lang { background: none; color: var(--fg); border: 1px solid var(--line); border-radius: 8px; font: inherit; font-weight: 700; font-size: 14px; padding: 3px 12px; cursor: pointer; }
 button.lang:hover { border-color: var(--ice); color: var(--ice); }
 
 .intro { padding-block: 64px 32px; display: grid; gap: 18px; }
